@@ -1,0 +1,15 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=2455
+
+*outputz* is a Vim plugin to provide the feature that the number of bytes you
+inputted will be automatically posted to outputz.com whenever a whole buffer
+is written to a file.
+
+Note that this is just a prototype.  The interface should be improved for the
+future.
+
+Requirements:
+- Vim 7.2 or later
+- curl - http://curl.haxx.se/
+
+Latest version:
+http://github.com/kana/vim-outputz
