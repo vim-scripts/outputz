@@ -1,5 +1,5 @@
 " outputz - outputz interface for Vim
-" Version: 0.0.0
+" Version: 0.0.1
 " Copyright (C) 2008 kana <http://whileimautomaton.net/>
 " License: MIT license  {{{
 "     Permission is hereby granted, free of charge, to any person obtaining
@@ -36,6 +36,11 @@ augroup plugin-outputz
   autocmd BufWritePre *  call outputz#send(0)
   autocmd FileAppendPre *  call outputz#send(1)
 augroup END
+
+
+if !executable('g:outputz_uri_function')
+  let g:outputz_uri_function = 'outputz#default_uri_function'
+endif
 
 
 
